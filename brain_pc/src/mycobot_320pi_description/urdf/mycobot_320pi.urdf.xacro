@@ -47,7 +47,7 @@
 
 
     <!-- Links -->
-    <link name="base_link"/>
+    <link name="world"/>
 
     <!-- Base Link-->
     <link name="base_plate">
@@ -342,7 +342,7 @@
     
     <!-- virtual Joints -->  
     <joint name="virtual_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="world"/>
         <child link="base_plate"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint> 

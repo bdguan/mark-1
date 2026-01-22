@@ -123,7 +123,7 @@ hardware_interface::return_type Mycobot_320pi_Interface::read(const rclcpp::Time
   rclcpp::spin_some(node_);
 
   if ((query_subscriber_->get_publisher_count() == 0) &&  
-    ((node_->get_clock()->now() - start_time_).seconds() > 30.0))
+    ((node_->get_clock()->now() - start_time_).seconds() > 2.0))
   {
     if (!warning_printed_)
     {

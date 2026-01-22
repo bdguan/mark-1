@@ -7,6 +7,8 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /MotionPlanning1/Scene Robot1
+        - /MotionPlanning1/Planning Request1
       Splitter Ratio: 0.5
     Tree Height: 343
   - Class: rviz_common/Views
@@ -84,11 +86,37 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          base_link:
+          base_plate:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          base_plate:
+            Value: true
+          camera_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          d435i_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_jaw_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_jaw_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_jaw_3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -118,16 +146,30 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          link_5_a:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           link_6:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          right_jaw_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_jaw_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_jaw_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -149,9 +191,9 @@ Visualization Manager:
         Colliding Link Color: 255; 0; 0
         Goal State Alpha: 1
         Goal State Color: 250; 128; 0
-        Interactive Marker Size: 0
+        Interactive Marker Size: 1
         Joint Violation Color: 255; 0; 255
-        Planning Group: arm
+        Planning Group: gripper
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -174,11 +216,37 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          base_link:
+          base_plate:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          base_plate:
+            Value: true
+          camera_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          d435i_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_jaw_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_jaw_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_jaw_3_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -208,16 +276,30 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          link_5_a:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           link_6:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          right_jaw_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_jaw_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_jaw_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
@@ -226,7 +308,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -269,25 +351,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 8.359989166259766
+      Distance: 2.6457557678222656
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.2150397300720215
-        Y: 0.033208221197128296
-        Z: 1.4500617980957031
+        X: 0.46100035309791565
+        Y: -0.5735487937927246
+        Z: 1.0070629119873047
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3847975730895996
+      Pitch: 0.42979753017425537
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 5.203526496887207
+      Yaw: 5.478526592254639
     Saved: ~
 Window Geometry:
   Displays:
