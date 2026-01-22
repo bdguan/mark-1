@@ -24,21 +24,13 @@ def generate_launch_description():
                 "launch",
                 "move_group.launch.py"
             ),
-            launch_arguments={"is_sim": "False", "default_planning_pipeline": "ompl"}.items()
+            launch_arguments={"is_sim": "False"}.items()
         )
     
-    rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        output='screen',
-        arguments=['-d', os.path.join(robot_2030a_description_dir, 'rviz', 'display_moveit.rviz')],
-    )
     
   
     
     return LaunchDescription([
         controller,
-        moveit,
-        rviz_node,
+        moveit
     ])
