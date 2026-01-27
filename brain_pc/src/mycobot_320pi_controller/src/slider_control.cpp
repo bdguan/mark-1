@@ -17,24 +17,30 @@ public:
     sub_ = create_subscription<sensor_msgs::msg::JointState>(
         "joint_commands", 10, std::bind(&SliderControl::sliderCallback, this, _1));
     arm_pub_ = create_publisher<trajectory_msgs::msg::JointTrajectory>("arm_controller/joint_trajectory", 10);
+    gripper_pub_ = create_publisher<trajectory_msgs::msg::JointTrajectory>("gripper_controller/joint_trajectory", 10);
     RCLCPP_INFO(get_logger(), "Slider Control Node started");
   }
 
 private:
   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr sub_;
   rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr arm_pub_;
+  rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr gripper_pub_;
 
   void sliderCallback(const sensor_msgs::msg::JointState &msg) const
   {
-    trajectory_msgs::msg::JointTrajectory arm_command;
-    arm_command.joint_names = {"joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"};
+    trajectory_msgs::msg::JointTrajectory arm_command, gripper_command;
+    arm_command.joint_names = {"joint_1", "joint_2", "joint_3, joint_4", "joint_5", "joint_6"};
+    gripper_command.joint_names = {"left_jaw_joint_1"};
 
-    trajectory_msgs::msg::JointTrajectoryPoint arm_goal;
-    arm_goal.positions.insert(arm_goal.positions.end(), msg.position.begin(), msg.position.begin() + 5);
+    trajectory_msgs::msg::JointTrajectoryPoint arm_goal, gripper_goal;
+    arm_goal.positions.insert(arm_goal.positions.end(), msg.position.begin(), msg.position.begin() + 6);
+    gripper_goal.positions.push_back(msg.position.at(6));
     
     arm_command.points.push_back(arm_goal);
+    gripper_command.points.push_back(gripper_goal);
     
     arm_pub_->publish(arm_command);
+    gripper_pub_->publish(gripper_command);
   }
 };
 

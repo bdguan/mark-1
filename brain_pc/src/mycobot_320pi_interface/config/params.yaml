@@ -1,0 +1,16 @@
+robot_bridge:
+  ros__parameters:
+    # Robot connection settings
+    robot_ip: "192.168.1.218"
+    robot_port: "5555"
+    
+    # Control parameters
+    query_rate: 10.0  # Hz
+    timeout: 2.0      # seconds
+    
+    # Gripper threshold (0.0 to 1.0)
+    gripper_close_threshold: 0.5
+    
+    # Debug settings
+    debug_mode: false
+    log_interval: 1.0  # seconds between debug logs
