@@ -1,0 +1,7 @@
+setup.py
+mycobot_320pi_controller/__init__.py
+mycobot_320pi_controller/slider_control.py
+mycobot_320pi_controller.egg-info/PKG-INFO
+mycobot_320pi_controller.egg-info/SOURCES.txt
+mycobot_320pi_controller.egg-info/dependency_links.txt
+mycobot_320pi_controller.egg-info/top_level.txt

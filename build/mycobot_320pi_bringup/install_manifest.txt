@@ -1,0 +1,17 @@
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/launch/mycobot_320pi_real.launch.py
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/launch/dual_cameras.launch.py
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/ament_index/resource_index/package_run_dependencies/mycobot_320pi_bringup
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/ament_index/resource_index/parent_prefix_path/mycobot_320pi_bringup
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/environment/ament_prefix_path.sh
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/environment/ament_prefix_path.dsv
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/environment/path.sh
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/environment/path.dsv
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/local_setup.bash
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/local_setup.sh
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/local_setup.zsh
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/local_setup.dsv
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.dsv
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/ament_index/resource_index/packages/mycobot_320pi_bringup
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/cmake/mycobot_320pi_bringupConfig.cmake
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/cmake/mycobot_320pi_bringupConfig-version.cmake
+/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.xml

@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mycobot_320pi">
+
+    <!-- Load Simulated or Real Hardware Interfaces -->
+    <xacro:arg name="is_sim" default="true"/>
+
+    <!-- Include Gazebo Parameters -->
+    <xacro:include filename="$(find mycobot_320pi_description)/urdf/mycobot_320pi_gazebo.xacro" />
+
+    <!-- Include ros2_control Plugins -->
+    <xacro:include filename="$(find mycobot_320pi_description)/urdf/mycobot_320pi_ros2_control.xacro" />
+    
+    <!-- Useful XACRO Variables (Properties) -->
+    <xacro:property name="PI" value="3.14159265359" />
+    <xacro:property name="effort" value="30.0" />
+    <xacro:property name="velocity" value="10.0" />
+
+    <!-- Useful Macros -->
+    <xacro:macro name="default_inertial" params="mass">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="${mass}" />
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+                     iyy="1.0" iyz="0.0"
+                     izz="1.0" />
+        </inertial>
+    </xacro:macro>
+
+
+    <xacro:macro name="default_transmission" params="number">
+        <transmission name="transmission_${number}">
+            <plugin>transmission_interface/SimpleTransmission</plugin>
+            <actuator name="motor_${number}" role="actuator1"/>
+            <joint name="joint_${number}"    role="joint1">
+                <mechanical_reduction>1.0</mechanical_reduction>
+            </joint>
+        </transmission>
+    </xacro:macro>
+
+    <transmission name="transmission_gripper_master">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="motor_gripper_master" role="actuator1"/>
+        <joint name="left_jaw_joint_1" role="joint1">
+            <mechanical_reduction>1.0</mechanical_reduction>
+        </joint>
+    </transmission>
+
+
+    <!-- Links -->
+    <link name="world"/>
+
+    <!-- Base Link-->
+    <link name="base_plate">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/base_plate.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/base_plate.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Link 1-->
+    <link name="link_1">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_1.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_1.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Link 2-->
+    <link name="link_2">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_2.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_2.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Link 3-->
+    <link name="link_3">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_3.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_3.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Link 4-->
+    <link name="link_4">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_4.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_4.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Link 5-->
+    <link name="link_5">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_5.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_5.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Link 6-->
+    <link name="link_6">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_6.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/link_6.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Camera mount-->
+    <link name="camera_mount">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/camera_mount.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/camera_mount.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Intel D435i Camera-->
+    <link name="d435i_camera_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/d435.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/d435.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Gripper Base-->
+    <link name="gripper_base_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/gripper_base.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/gripper_base.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Gripper Left Jaw 1-->
+    <link name="left_jaw_1_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_1.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_1.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Gripper Left Jaw 2-->
+    <link name="left_jaw_2_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_2.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_2.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Gripper Left Jaw 3-->
+    <link name="left_jaw_3_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_3.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_3.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Gripper Right Jaw 1-->
+    <link name="right_jaw_1_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_1.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_1.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Gripper Right Jaw 2-->
+    <link name="right_jaw_2_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_2.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_2.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Gripper Right Jaw 3-->
+    <link name="right_jaw_3_link">
+        <xacro:default_inertial mass="1.0"/>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_3.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_3.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    
+
+    
+    <!-- virtual Joints -->  
+    <joint name="virtual_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_plate"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint> 
+
+
+    <!-- Joint 1 -->  
+    <joint name ="joint_1" type="revolute">
+        <parent link="base_plate"/>
+        <child link = "link_1"/>
+        <origin xyz="0 0 0.097" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-2.93" upper="2.93" effort="5" velocity="10.0"/>   
+    </joint>
+
+
+    <!-- Joint 2 -->  
+    <joint name ="joint_2" type="revolute">
+        <parent link="link_1"/>
+        <child link = "link_2"/>
+        <origin xyz="0 -0.0477 0.079" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-2.35" upper="2.35" effort="5" velocity="10.0"/>   
+    </joint>
+
+
+    <!-- Joint 3 -->  
+    <joint name ="joint_3" type="revolute">
+        <parent link="link_2"/>
+        <child link = "link_3"/>
+        <origin xyz="0.0 0.0075 0.135" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-2.53" upper="2.53" effort="5" velocity="10.0"/>   
+    </joint>
+
+
+    <!-- Joint 4 -->  
+    <joint name ="joint_4" type="revolute">
+        <parent link="link_3"/>
+        <child link = "link_4"/>
+        <origin xyz="0.0 0.002 0.1201" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-2.53" upper="2.53" effort="5" velocity="10.0"/>   
+    </joint>
+
+
+    <!-- Joint 5 -->  
+    <joint name ="joint_5" type="revolute">
+        <parent link="link_4"/>
+        <child link = "link_5"/>
+        <origin xyz="0.0 -0.0498 0.045" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-2.93" upper="2.93" effort="5" velocity="10.0"/>   
+    </joint>
+
+
+    <!-- Joint 6 -->  
+    <joint name ="joint_6" type="revolute">
+        <parent link="link_5"/>
+        <child link = "link_6"/>
+        <origin xyz="0.0 -0.045 0.05" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-3.14" upper="3.14" effort="5" velocity="10.0"/>   
+    </joint>
+
+
+    <!-- Camera mount Joint -->  
+    <joint name ="camera_mount_joint" type="fixed">
+        <parent link="link_6"/>
+        <child link = "camera_mount"/>
+        <origin xyz="0 -0.0194 0" rpy="0 0 0"/>  
+    </joint>
+
+
+    <!-- Intel Camera D435i Joint -->  
+    <joint name ="d435i_camera_joint" type="fixed">
+        <parent link="camera_mount"/>
+        <child link = "d435i_camera_link"/>
+        <origin xyz="0.1 -0.0122 0" rpy="1.5708 0 0"/>  
+    </joint>
+
+
+    <!-- Camera mount Joint -->  
+    <joint name ="gripper_base_joint" type="fixed">
+        <parent link="camera_mount"/>
+        <child link = "gripper_base_link"/>
+        <origin xyz="0 -0.003 0" rpy="0 0 0"/>  
+    </joint>
+
+
+    <!-- Gripper Left Jaw Joint 1 -->  
+    <joint name ="left_jaw_joint_1" type="revolute">
+        <parent link="gripper_base_link"/>
+        <child link = "left_jaw_1_link"/>
+        <origin xyz="-0.0115 -0.056 0.015" rpy="0 0 0"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-1.11" upper="0" effort="5" velocity="10.0"/>   
+    </joint>
+
+
+    <!-- Gripper Left Jaw Joint 2 -->  
+    <joint name ="left_jaw_joint_2" type="revolute">
+        <parent link="gripper_base_link"/>
+        <child link = "left_jaw_2_link"/>
+        <origin xyz="-0.0029 -0.033 0.0415" rpy="0 0 0"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.8" upper="0.5" effort="5" velocity="10.0"/>  
+        <mimic joint="left_jaw_joint_1" multiplier="1.0" offset="0" /> 
+    </joint>
+
+
+    <!-- Gripper Left Jaw Joint 3 -->  
+    <joint name ="left_jaw_joint_3" type="revolute">
+        <parent link="left_jaw_1_link"/>
+        <child link = "left_jaw_3_link"/>
+        <origin xyz="-0.003 -0.035 0.05" rpy="0 0 0"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.5" upper="0.5" effort="5" velocity="10.0"/>  
+        <mimic joint="left_jaw_joint_1" multiplier="-1.0" offset="0" /> 
+    </joint>
+
+
+    <!-- Gripper Right Jaw Joint 1 -->  
+    <joint name ="right_jaw_joint_1" type="revolute">
+        <parent link="gripper_base_link"/>
+        <child link = "right_jaw_1_link"/>
+        <origin xyz="-0.0115 -0.056 -0.022" rpy="0 0 0"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-1.11" upper="0" effort="5" velocity="10.0"/>
+        <mimic joint="left_jaw_joint_1" multiplier="-1.0" offset="0" />    
+    </joint>
+
+
+    <!-- Gripper Right Jaw Joint 2 -->  
+    <joint name ="right_jaw_joint_2" type="revolute">
+        <parent link="gripper_base_link"/>
+        <child link = "right_jaw_2_link"/>
+        <origin xyz="-0.0029 -0.033 -0.0475" rpy="0 0 0"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.8" upper="0.5" effort="5" velocity="10.0"/>  
+        <mimic joint="left_jaw_joint_1" multiplier="-1.0" offset="0" /> 
+    </joint>
+
+
+    <!-- Gripper Right Jaw Joint 3 -->  
+    <joint name ="right_jaw_joint_3" type="revolute">
+        <parent link="right_jaw_1_link"/>
+        <child link = "right_jaw_3_link"/>
+        <origin xyz="-0.003 -0.035 -0.05" rpy="0 0 0"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.5" upper="0.5" effort="5" velocity="10.0"/>  
+        <mimic joint="left_jaw_joint_1" multiplier="1.0" offset="0" /> 
+    </joint>
+
+
+
+    <!-- Transmissions-->
+    <xacro:default_transmission number="1"/>
+    <xacro:default_transmission number="2"/>
+    <xacro:default_transmission number="3"/>
+    <xacro:default_transmission number="4"/>
+    <xacro:default_transmission number="5"/>
+    <xacro:default_transmission number="6"/>
+
+    
+
+</robot>

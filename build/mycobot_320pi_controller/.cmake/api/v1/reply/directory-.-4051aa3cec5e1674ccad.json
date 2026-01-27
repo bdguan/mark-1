@@ -1,0 +1,737 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"pluginlib_export_plugin_description_file",
+			"ament_environment_hooks",
+			"_ament_cmake_python_register_environment_hook",
+			"ament_python_install_package",
+			"_ament_cmake_python_install_package",
+			"_ament_cmake_export_libraries_register_environment_hook",
+			"ament_export_libraries",
+			"ament_index_register_resource",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"include",
+			"ament_execute_extensions",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_cmake_python-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_cmake_export_libraries-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_export_libraries.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake",
+			"/opt/ros/humble/share/pluginlib/cmake/pluginlib_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 38,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 36,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 5
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 39,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 154,
+				"parent" : 8
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 181,
+				"parent" : 8
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 191,
+				"parent" : 8
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 35,
+				"parent" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 25,
+				"parent" : 19
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 20
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 20
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 91,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 10,
+				"line" : 66,
+				"parent" : 23
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 24
+			},
+			{
+				"file" : 8,
+				"parent" : 25
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 47,
+				"parent" : 26
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 29,
+				"parent" : 27
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 28
+			},
+			{
+				"command" : 13,
+				"file" : 8,
+				"line" : 48,
+				"parent" : 26
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 43,
+				"parent" : 30
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 31
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 24
+			},
+			{
+				"file" : 11,
+				"parent" : 33
+			},
+			{
+				"command" : 2,
+				"file" : 11,
+				"line" : 20,
+				"parent" : 34
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 35
+			},
+			{
+				"command" : 14,
+				"file" : 11,
+				"line" : 26,
+				"parent" : 34
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 91,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 91,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 91,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 107,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 119,
+				"parent" : 40
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 24
+			},
+			{
+				"file" : 14,
+				"parent" : 46
+			},
+			{
+				"command" : 15,
+				"file" : 14,
+				"line" : 16,
+				"parent" : 47
+			},
+			{
+				"command" : 8,
+				"file" : 13,
+				"line" : 29,
+				"parent" : 48
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 49
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 24
+			},
+			{
+				"file" : 15,
+				"parent" : 51
+			},
+			{
+				"command" : 8,
+				"file" : 15,
+				"line" : 22,
+				"parent" : 52
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 53
+			},
+			{
+				"command" : 16,
+				"file" : 10,
+				"line" : 68,
+				"parent" : 23
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 122,
+				"parent" : 55
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 122,
+				"parent" : 55
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 122,
+				"parent" : 55
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 150,
+				"parent" : 55
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 157,
+				"parent" : 55
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"mycobot_320pi_controller.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/pythonpath.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/pythonpath.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/mycobot_320pi_controller-0.0.0-py3.10.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_python/mycobot_320pi_controller/mycobot_320pi_controller.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/mycobot_320pi_controller",
+			"paths" : 
+			[
+				{
+					"from" : "mycobot_320pi_controller",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "lib/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"slider_control"
+			],
+			"targetId" : "slider_control::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmycobot_320pi_controller.so"
+			],
+			"targetId" : "mycobot_320pi_controller::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"include"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"launch",
+				"config"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "lib/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"mycobot_320pi_controller/slider_control.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "lib/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"scripts/motion_smoothing.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/library_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mycobot_320pi_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mycobot_320pi_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 37,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/environment",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 41,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 42,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 43,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 50,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_index/share/ament_index/resource_index/packages/mycobot_320pi_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 54,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/hardware_interface__pluginlib__plugin",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_index/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/mycobot_320pi_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 56,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/cmake",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 57,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/cmake",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 58,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/cmake",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 59,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller/cmake",
+			"paths" : 
+			[
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_core/mycobot_320pi_controllerConfig.cmake",
+				"/home/brian/mark-1/build/mycobot_320pi_controller/ament_cmake_core/mycobot_320pi_controllerConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 60,
+			"component" : "Unspecified",
+			"destination" : "share/mycobot_320pi_controller",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

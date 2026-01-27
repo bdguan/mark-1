@@ -1,0 +1,2 @@
+source;share/mycobot_320pi_moveit/environment/ament_prefix_path.sh
+source;share/mycobot_320pi_moveit/environment/path.sh

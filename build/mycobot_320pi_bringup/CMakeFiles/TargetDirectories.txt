@@ -1,0 +1,9 @@
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/uninstall.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/mycobot_320pi_bringup_uninstall.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/test.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/edit_cache.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/rebuild_cache.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/list_install_components.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/install.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/install/local.dir
+/home/brian/mark-1/build/mycobot_320pi_bringup/CMakeFiles/install/strip.dir

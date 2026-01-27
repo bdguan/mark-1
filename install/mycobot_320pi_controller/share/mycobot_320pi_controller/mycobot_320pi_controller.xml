@@ -1,0 +1,10 @@
+<library path="mycobot_320pi_controller">
+    <class name="mycobot_320pi_controller/Mycobot_320pi_Interface"
+      type="mycobot_320pi_controller::Mycobot_320pi_Interface"
+      base_class_type="hardware_interface::SystemInterface"
+    >
+      <description>
+        mycobot_320pi Hardware Interface
+      </description>
+    </class>
+  </library>

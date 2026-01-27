@@ -1,0 +1,74 @@
+[0.018s] Invoking command in '/home/brian/mark-1/build/mycobot_320pi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_description -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_description
+[0.220s] -- The C compiler identification is GNU 11.4.0
+[0.365s] -- The CXX compiler identification is GNU 11.4.0
+[0.375s] -- Detecting C compiler ABI info
+[0.457s] -- Detecting C compiler ABI info - done
+[0.465s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.466s] -- Detecting C compile features
+[0.467s] -- Detecting C compile features - done
+[0.470s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.570s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.571s] -- Detecting CXX compile features
+[0.571s] -- Detecting CXX compile features - done
+[0.579s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.755s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.877s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.951s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.050s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.056s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.058s] -- Added test 'lint_cmake' to check CMake code style
+[1.058s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.062s] -- Added test 'xmllint' to check XML markup files
+[1.064s] -- Configuring done
+[1.067s] -- Generating done
+[1.070s] -- Build files have been written to: /home/brian/mark-1/build/mycobot_320pi_description
+[1.076s] Invoked command in '/home/brian/mark-1/build/mycobot_320pi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_description -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_description
+[1.077s] Invoking command in '/home/brian/mark-1/build/mycobot_320pi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_description -- -j16 -l16
+[1.125s] Invoked command in '/home/brian/mark-1/build/mycobot_320pi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_description -- -j16 -l16
+[1.126s] Invoking command in '/home/brian/mark-1/build/mycobot_320pi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_description
+[1.134s] -- Install configuration: ""
+[1.135s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/launch
+[1.135s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/launch/display.launch.py
+[1.135s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes
+[1.135s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/camera_mount.dae
+[1.136s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/link_6.dae
+[1.138s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/link_1.dae
+[1.146s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/d435.dae
+[1.225s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/link_2.dae
+[1.235s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/link_4.dae
+[1.242s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper
+[1.242s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_3.dae
+[1.270s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_1.dae
+[1.288s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_2.dae
+[1.290s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_3.dae
+[1.311s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/right_jaw_2.dae
+[1.314s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/gripper_base.dae
+[1.559s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/gripper_mount.dae
+[1.567s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/pro_force_gripper/left_jaw_1.dae
+[1.592s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/link_5.dae
+[1.598s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/link_3.dae
+[1.605s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/meshes/base_plate.dae
+[1.627s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/urdf
+[1.627s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/urdf/mycobot_320pi_gazebo.xacro
+[1.628s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/urdf/mycobot_320pi_ros2_control.xacro
+[1.628s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/urdf/mycobot_320pi.urdf.xacro
+[1.628s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/rviz
+[1.628s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/rviz/display_moveit.rviz
+[1.628s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/rviz/display.rviz
+[1.629s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/ament_index/resource_index/package_run_dependencies/mycobot_320pi_description
+[1.629s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/ament_index/resource_index/parent_prefix_path/mycobot_320pi_description
+[1.629s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/environment/ament_prefix_path.sh
+[1.629s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/environment/ament_prefix_path.dsv
+[1.629s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/environment/path.sh
+[1.630s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/environment/path.dsv
+[1.630s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/local_setup.bash
+[1.630s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/local_setup.sh
+[1.630s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/local_setup.zsh
+[1.630s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/local_setup.dsv
+[1.631s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.dsv
+[1.631s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/ament_index/resource_index/packages/mycobot_320pi_description
+[1.631s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/cmake/mycobot_320pi_descriptionConfig.cmake
+[1.631s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/cmake/mycobot_320pi_descriptionConfig-version.cmake
+[1.631s] -- Installing: /home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.xml
+[1.634s] Invoked command in '/home/brian/mark-1/build/mycobot_320pi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_description

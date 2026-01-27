@@ -1,0 +1,407 @@
+[0.236s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.237s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77d6c4d65a80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77d6c4d653f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77d6c4d653f0>>, mixin_verb=('build',))
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.497s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/brian/mark-1'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extensions ['ignore', 'ignore_ament_install']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'ignore'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'ignore_ament_install'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extensions ['colcon_pkg']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'colcon_pkg'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extensions ['colcon_meta']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'colcon_meta'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extensions ['ros']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'ros'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extensions ['cmake', 'python']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'cmake'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'python'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extensions ['python_setup_py']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi) by extension 'python_setup_py'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'ignore'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'ignore_ament_install'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extensions ['colcon_pkg']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'colcon_pkg'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extensions ['colcon_meta']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'colcon_meta'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extensions ['ros']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'ros'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extensions ['cmake', 'python']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'cmake'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'python'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extensions ['python_setup_py']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(body_pi/drivers) by extension 'python_setup_py'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'ignore_ament_install'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extensions ['colcon_pkg']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'colcon_pkg'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extensions ['colcon_meta']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'colcon_meta'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extensions ['ros']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'ros'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extensions ['cmake', 'python']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'cmake'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'python'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extensions ['python_setup_py']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc) by extension 'python_setup_py'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/build) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/build) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/build) ignored
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/install) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/install) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/install) ignored
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/log) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/log) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/log) ignored
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'ignore_ament_install'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extensions ['colcon_pkg']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'colcon_pkg'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extensions ['colcon_meta']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'colcon_meta'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extensions ['ros']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'ros'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extensions ['cmake', 'python']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'cmake'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'python'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extensions ['python_setup_py']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src) by extension 'python_setup_py'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extensions ['ignore', 'ignore_ament_install']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'ignore'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'ignore_ament_install'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extensions ['colcon_pkg']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'colcon_pkg'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extensions ['colcon_meta']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'colcon_meta'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extensions ['ros']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'ros'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extensions ['cmake', 'python']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'cmake'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'python'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extensions ['python_setup_py']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/brain) by extension 'python_setup_py'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extension 'ignore_ament_install'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extensions ['colcon_pkg']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extension 'colcon_pkg'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extensions ['colcon_meta']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extension 'colcon_meta'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extensions ['ros']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_bringup) by extension 'ros'
+[0.521s] DEBUG:colcon.colcon_core.package_identification:Package 'brain_pc/src/mycobot_320pi_bringup' with type 'ros.ament_cmake' and name 'mycobot_320pi_bringup'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extension 'ignore'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extension 'ignore_ament_install'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extensions ['colcon_pkg']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extension 'colcon_pkg'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extensions ['colcon_meta']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extension 'colcon_meta'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extensions ['ros']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_controller) by extension 'ros'
+[0.523s] DEBUG:colcon.colcon_core.package_identification:Package 'brain_pc/src/mycobot_320pi_controller' with type 'ros.ament_cmake' and name 'mycobot_320pi_controller'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extensions ['ignore', 'ignore_ament_install']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extension 'ignore'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extension 'ignore_ament_install'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extensions ['colcon_pkg']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extension 'colcon_pkg'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extensions ['colcon_meta']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extension 'colcon_meta'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extensions ['ros']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_description) by extension 'ros'
+[0.524s] DEBUG:colcon.colcon_core.package_identification:Package 'brain_pc/src/mycobot_320pi_description' with type 'ros.ament_cmake' and name 'mycobot_320pi_description'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extension 'ignore'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extension 'ignore_ament_install'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extensions ['colcon_pkg']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extension 'colcon_pkg'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extensions ['colcon_meta']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extension 'colcon_meta'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extensions ['ros']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(brain_pc/src/mycobot_320pi_moveit) by extension 'ros'
+[0.526s] DEBUG:colcon.colcon_core.package_identification:Package 'brain_pc/src/mycobot_320pi_moveit' with type 'ros.ament_cmake' and name 'mycobot_320pi_moveit'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.571s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 383 installed packages in /opt/ros/humble
+[0.573s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'cmake_target' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.628s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_320pi_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brian/mark-1/build/mycobot_320pi_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brian/mark-1/install/mycobot_320pi_bringup', 'merge_install': False, 'path': '/home/brian/mark-1/brain_pc/src/mycobot_320pi_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'cmake_target' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.629s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_320pi_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brian/mark-1/build/mycobot_320pi_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brian/mark-1/install/mycobot_320pi_controller', 'merge_install': False, 'path': '/home/brian/mark-1/brain_pc/src/mycobot_320pi_controller', 'symlink_install': False, 'test_result_base': None}
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'cmake_args' from command line to 'None'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'cmake_target' from command line to 'None'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.629s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_320pi_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brian/mark-1/build/mycobot_320pi_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brian/mark-1/install/mycobot_320pi_description', 'merge_install': False, 'path': '/home/brian/mark-1/brain_pc/src/mycobot_320pi_description', 'symlink_install': False, 'test_result_base': None}
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'cmake_target' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'mycobot_320pi_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.630s] DEBUG:colcon.colcon_core.verb:Building package 'mycobot_320pi_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brian/mark-1/build/mycobot_320pi_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brian/mark-1/install/mycobot_320pi_moveit', 'merge_install': False, 'path': '/home/brian/mark-1/brain_pc/src/mycobot_320pi_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.630s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.631s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.631s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_description' with build type 'ament_cmake'
+[0.631s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_description'
+[0.636s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.636s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.636s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.640s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_bringup' with build type 'ament_cmake'
+[0.640s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_bringup'
+[0.640s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.640s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.644s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_controller' with build type 'ament_cmake'
+[0.644s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_controller'
+[0.644s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.644s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_description -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_description
+[0.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_bringup -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_bringup
+[0.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_controller -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_controller
+[1.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_bringup -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_bringup
+[1.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_bringup -- -j16 -l16
+[1.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_bringup -- -j16 -l16
+[1.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_bringup
+[1.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_bringup)
+[1.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_bringup
+[1.685s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup' for CMake module files
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup' for CMake config files
+[1.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_bringup', 'cmake_prefix_path')
+[1.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/hook/cmake_prefix_path.ps1'
+[1.687s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/hook/cmake_prefix_path.dsv'
+[1.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/hook/cmake_prefix_path.sh'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/bin'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/lib/pkgconfig/mycobot_320pi_bringup.pc'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/lib/python3.10/site-packages'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/bin'
+[1.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.ps1'
+[1.691s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.dsv'
+[1.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.sh'
+[1.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.bash'
+[1.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.zsh'
+[1.694s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_bringup/share/colcon-core/packages/mycobot_320pi_bringup)
+[1.695s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_bringup)
+[1.695s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup' for CMake module files
+[1.696s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup' for CMake config files
+[1.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_bringup', 'cmake_prefix_path')
+[1.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/hook/cmake_prefix_path.ps1'
+[1.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/hook/cmake_prefix_path.dsv'
+[1.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/hook/cmake_prefix_path.sh'
+[1.697s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/bin'
+[1.697s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/lib/pkgconfig/mycobot_320pi_bringup.pc'
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/lib/python3.10/site-packages'
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_bringup/bin'
+[1.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.ps1'
+[1.699s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.dsv'
+[1.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.sh'
+[1.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.bash'
+[1.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_bringup/share/mycobot_320pi_bringup/package.zsh'
+[1.701s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_bringup/share/colcon-core/packages/mycobot_320pi_bringup)
+[1.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_description -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_description
+[1.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_description -- -j16 -l16
+[1.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_description -- -j16 -l16
+[1.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_description
+[2.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_description)
+[2.266s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description' for CMake module files
+[2.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_description
+[2.267s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description' for CMake config files
+[2.267s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_description', 'cmake_prefix_path')
+[2.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/hook/cmake_prefix_path.ps1'
+[2.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/hook/cmake_prefix_path.dsv'
+[2.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/hook/cmake_prefix_path.sh'
+[2.270s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/bin'
+[2.270s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/lib/pkgconfig/mycobot_320pi_description.pc'
+[2.270s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/lib/python3.10/site-packages'
+[2.271s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/bin'
+[2.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.ps1'
+[2.272s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.dsv'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.sh'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.bash'
+[2.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.zsh'
+[2.274s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_description/share/colcon-core/packages/mycobot_320pi_description)
+[2.275s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_description)
+[2.275s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description' for CMake module files
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description' for CMake config files
+[2.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_description', 'cmake_prefix_path')
+[2.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/hook/cmake_prefix_path.ps1'
+[2.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/hook/cmake_prefix_path.dsv'
+[2.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/hook/cmake_prefix_path.sh'
+[2.279s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/bin'
+[2.279s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/lib/pkgconfig/mycobot_320pi_description.pc'
+[2.279s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/lib/python3.10/site-packages'
+[2.280s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_description/bin'
+[2.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.ps1'
+[2.281s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.dsv'
+[2.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.sh'
+[2.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.bash'
+[2.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_description/share/mycobot_320pi_description/package.zsh'
+[2.284s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_description/share/colcon-core/packages/mycobot_320pi_description)
+[2.284s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_moveit' with build type 'ament_cmake'
+[2.284s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brian/mark-1/brain_pc/src/mycobot_320pi_moveit'
+[2.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_moveit': AMENT_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_moveit -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_moveit
+[2.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_controller -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_controller
+[2.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_controller -- -j16 -l16
+[3.028s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_moveit' returned '0': AMENT_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:/opt/ros/humble /usr/bin/cmake /home/brian/mark-1/brain_pc/src/mycobot_320pi_moveit -DCMAKE_INSTALL_PREFIX=/home/brian/mark-1/install/mycobot_320pi_moveit
+[3.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_moveit': AMENT_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_moveit -- -j16 -l16
+[3.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_moveit' returned '0': AMENT_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_moveit -- -j16 -l16
+[3.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_moveit': AMENT_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_moveit
+[3.101s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_moveit)
+[3.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_moveit' returned '0': AMENT_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian/mark-1/install/mycobot_320pi_description:/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_moveit
+[3.102s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit' for CMake module files
+[3.103s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit' for CMake config files
+[3.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_moveit', 'cmake_prefix_path')
+[3.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/hook/cmake_prefix_path.ps1'
+[3.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/hook/cmake_prefix_path.dsv'
+[3.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/hook/cmake_prefix_path.sh'
+[3.106s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/bin'
+[3.106s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/lib/pkgconfig/mycobot_320pi_moveit.pc'
+[3.106s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/lib/python3.10/site-packages'
+[3.107s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/bin'
+[3.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.ps1'
+[3.108s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.dsv'
+[3.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.sh'
+[3.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.bash'
+[3.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.zsh'
+[3.110s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_moveit/share/colcon-core/packages/mycobot_320pi_moveit)
+[3.111s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_moveit)
+[3.112s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit' for CMake module files
+[3.112s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit' for CMake config files
+[3.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_moveit', 'cmake_prefix_path')
+[3.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/hook/cmake_prefix_path.ps1'
+[3.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/hook/cmake_prefix_path.dsv'
+[3.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/hook/cmake_prefix_path.sh'
+[3.115s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/bin'
+[3.115s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/lib/pkgconfig/mycobot_320pi_moveit.pc'
+[3.116s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/lib/python3.10/site-packages'
+[3.116s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_moveit/bin'
+[3.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.ps1'
+[3.118s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.dsv'
+[3.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.sh'
+[3.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.bash'
+[3.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_moveit/share/mycobot_320pi_moveit/package.zsh'
+[3.120s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_moveit/share/colcon-core/packages/mycobot_320pi_moveit)
+[12.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/brian/mark-1/build/mycobot_320pi_controller -- -j16 -l16
+[12.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brian/mark-1/build/mycobot_320pi_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_controller
+[12.913s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_controller)
+[12.913s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller' for CMake module files
+[12.914s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brian/mark-1/build/mycobot_320pi_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/brian/mark-1/build/mycobot_320pi_controller
+[12.914s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller' for CMake config files
+[12.915s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_controller', 'cmake_prefix_path')
+[12.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/cmake_prefix_path.ps1'
+[12.915s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/cmake_prefix_path.dsv'
+[12.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/cmake_prefix_path.sh'
+[12.916s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/lib'
+[12.916s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_controller', 'ld_library_path_lib')
+[12.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/ld_library_path_lib.ps1'
+[12.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/ld_library_path_lib.dsv'
+[12.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/ld_library_path_lib.sh'
+[12.918s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/bin'
+[12.918s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/lib/pkgconfig/mycobot_320pi_controller.pc'
+[12.918s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/lib/python3.10/site-packages'
+[12.918s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/bin'
+[12.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.ps1'
+[12.919s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.dsv'
+[12.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.sh'
+[12.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.bash'
+[12.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.zsh'
+[12.920s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_controller/share/colcon-core/packages/mycobot_320pi_controller)
+[12.921s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mycobot_320pi_controller)
+[12.921s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller' for CMake module files
+[12.922s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller' for CMake config files
+[12.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_controller', 'cmake_prefix_path')
+[12.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/cmake_prefix_path.ps1'
+[12.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/cmake_prefix_path.dsv'
+[12.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/cmake_prefix_path.sh'
+[12.923s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/lib'
+[12.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('mycobot_320pi_controller', 'ld_library_path_lib')
+[12.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/ld_library_path_lib.ps1'
+[12.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/ld_library_path_lib.dsv'
+[12.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/hook/ld_library_path_lib.sh'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/bin'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/lib/pkgconfig/mycobot_320pi_controller.pc'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/lib/python3.10/site-packages'
+[12.926s] Level 1:colcon.colcon_core.environment:checking '/home/brian/mark-1/install/mycobot_320pi_controller/bin'
+[12.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.ps1'
+[12.926s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.dsv'
+[12.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.sh'
+[12.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.bash'
+[12.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.zsh'
+[12.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brian/mark-1/install/mycobot_320pi_controller/share/colcon-core/packages/mycobot_320pi_controller)
+[12.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.929s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.934s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.934s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.935s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.960s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.960s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brian/mark-1/install/local_setup.ps1'
+[12.962s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/brian/mark-1/install/_local_setup_util_ps1.py'
+[12.965s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brian/mark-1/install/setup.ps1'
+[12.966s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brian/mark-1/install/local_setup.sh'
+[12.967s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/brian/mark-1/install/_local_setup_util_sh.py'
+[12.968s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brian/mark-1/install/setup.sh'
+[12.970s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brian/mark-1/install/local_setup.bash'
+[12.970s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brian/mark-1/install/setup.bash'
+[12.972s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brian/mark-1/install/local_setup.zsh'
+[12.973s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brian/mark-1/install/setup.zsh'

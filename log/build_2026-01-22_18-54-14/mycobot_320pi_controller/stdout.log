@@ -1,0 +1,108 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+-- Found hardware_interface: 2.53.0 (/opt/ros/humble/share/hardware_interface/cmake)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+-- Checking for module 'libserial'
+--   No package 'libserial' found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/brian/mark-1/build/mycobot_320pi_controller
+[ 25%] [32mBuilding CXX object CMakeFiles/slider_control.dir/src/slider_control.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mycobot_320pi_controller.dir/src/mycobot_320pi_interface.cpp.o[0m
+[ 50%] Built target ament_cmake_python_copy_mycobot_320pi_controller
+running egg_info
+creating mycobot_320pi_controller.egg-info
+writing mycobot_320pi_controller.egg-info/PKG-INFO
+writing dependency_links to mycobot_320pi_controller.egg-info/dependency_links.txt
+writing top-level names to mycobot_320pi_controller.egg-info/top_level.txt
+writing manifest file 'mycobot_320pi_controller.egg-info/SOURCES.txt'
+reading manifest file 'mycobot_320pi_controller.egg-info/SOURCES.txt'
+writing manifest file 'mycobot_320pi_controller.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_mycobot_320pi_controller_egg
+[ 75%] [32m[1mLinking CXX executable slider_control[0m
+[ 75%] Built target slider_control
+[100%] [32m[1mLinking CXX shared library libmycobot_320pi_controller.so[0m
+[100%] Built target mycobot_320pi_controller
+-- Install configuration: ""
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/mycobot_320pi_controller.xml
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/pythonpath.sh
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/pythonpath.dsv
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller-0.0.0-py3.10.egg-info
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller/__init__.py
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller/slider_control.py
+Listing '/home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller'...
+Compiling '/home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller/__init__.py'...
+Compiling '/home/brian/mark-1/install/mycobot_320pi_controller/local/lib/python3.10/dist-packages/mycobot_320pi_controller/slider_control.py'...
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/lib/mycobot_320pi_controller/slider_control
+-- Set runtime path of "/home/brian/mark-1/install/mycobot_320pi_controller/lib/mycobot_320pi_controller/slider_control" to ""
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/lib/libmycobot_320pi_controller.so
+-- Set runtime path of "/home/brian/mark-1/install/mycobot_320pi_controller/lib/libmycobot_320pi_controller.so" to ""
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/include/include
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/include/include/mycobot_320pi_controller
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/include/include/mycobot_320pi_controller/mycobot_320pi_interface.hpp
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/launch
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/launch/controller.launch.py
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/launch/slider_controller.launch.py
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/config
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/config/speed_params.yaml
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/config/mycobot_320pi_controllers.yaml
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/lib/mycobot_320pi_controller/slider_control.py
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/lib/mycobot_320pi_controller/motion_smoothing.py
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/library_path.sh
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/library_path.dsv
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/ament_index/resource_index/package_run_dependencies/mycobot_320pi_controller
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/ament_index/resource_index/parent_prefix_path/mycobot_320pi_controller
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/ament_prefix_path.sh
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/path.sh
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/environment/path.dsv
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/local_setup.bash
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/local_setup.sh
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/local_setup.zsh
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/local_setup.dsv
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.dsv
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/ament_index/resource_index/packages/mycobot_320pi_controller
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/mycobot_320pi_controller
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/cmake/mycobot_320pi_controllerConfig.cmake
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/cmake/mycobot_320pi_controllerConfig-version.cmake
+-- Installing: /home/brian/mark-1/install/mycobot_320pi_controller/share/mycobot_320pi_controller/package.xml
