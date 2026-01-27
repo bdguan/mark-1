@@ -10,11 +10,11 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    is_sim = LaunchConfiguration('is_sim')
+    is_sim = LaunchConfiguration("is_sim")
     
     is_sim_arg = DeclareLaunchArgument(
-        'is_sim',
-        default_value='True'
+        "is_sim",
+        default_value="True"
     )
 
     robot_description = ParameterValue(
@@ -35,7 +35,8 @@ def generate_launch_description():
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
-        parameters=[{"robot_description": robot_description}],
+        parameters=[{"robot_description": robot_description,
+                     "use_sim_time": False}],
         condition=UnlessCondition(is_sim),
     )
 
@@ -76,13 +77,11 @@ def generate_launch_description():
         arguments=["gripper_controller", "--controller-manager", "/controller_manager"],
     )
 
-    motion_smoothing_node = Node(
-        package="mycobot_320pi_controller",  
-        executable="motion_smoothing.py",  
-        name="motion_smoothing",
-        output="screen"
+    arm_constants_node = Node(
+        package='mycobot_320pi_controller',
+        executable='arm_constants.py',
+        output='screen'
     )
-
 
     return LaunchDescription(
         [
@@ -91,7 +90,7 @@ def generate_launch_description():
             controller_manager,
             joint_state_broadcaster_spawner,
             arm_controller_spawner,
-            motion_smoothing_node,
-            gripper_controller_spawner
+            gripper_controller_spawner,
+            arm_constants_node,
         ]
     )

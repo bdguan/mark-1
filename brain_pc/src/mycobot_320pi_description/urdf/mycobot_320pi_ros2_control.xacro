@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot_2030a">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mycobot_320pi">
 
     <ros2_control name="RobotSystem" type="system">
 
@@ -7,76 +7,105 @@
 
         <!-- ros2_control Gazebo -->
         <xacro:if value="$(arg is_sim)">
-            <hardware>
-                <plugin>gazebo_ros2_control/GazeboSystem</plugin>
-            </hardware>
+            <!-- ROS 2 Humble -->
+            <xacro:if value="$(arg is_ignition)">
+                <hardware>
+                    <plugin>ign_ros2_control/IgnitionSystem</plugin>
+                </hardware>
+            </xacro:if>
+
+            <!-- ROS 2 Iron or above -->
+            <xacro:unless value="$(arg is_ignition)">
+                <hardware>
+                    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+                </hardware>
+            </xacro:unless>
+
+            <joint name="left_jaw_joint_2">
+                <param name="mimic">left_jaw_joint_1</param>
+                <param name="multiplier">1</param>
+            </joint>
+            <joint name="left_jaw_joint_3">
+                <param name="mimic">left_jaw_joint_1</param>
+                <param name="multiplier">-1</param>
+            </joint>
+            <joint name="right_jaw_joint_1">
+                <param name="mimic">left_jaw_joint_1</param>
+                <param name="multiplier">-1</param>
+            </joint>
+            <joint name="right_jaw_joint_2">
+                <param name="mimic">left_jaw_joint_1</param>
+                <param name="multiplier">-1</param>
+            </joint>
+            <joint name="right_jaw_joint_3">
+                <param name="mimic">left_jaw_joint_1</param>
+                <param name="multiplier">1</param>
+            </joint>
         </xacro:if>
 
         <!-- ros2_control Real Robot -->
         <xacro:unless value="$(arg is_sim)">
             <hardware>
-                <plugin>mycobot_320pi_controller/Mycobot_320pi_Interface</plugin>
+                <plugin>mycobot_320pi_controller/Mycobot320piInterface</plugin>
                 <param name="port">/dev/ttyACM0</param>
             </hardware>
         </xacro:unless>
 
-
+        <!-- Joint 1 -->
         <joint name="joint_1">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">${PI / 2}</param>
-            </command_interface>
+            <command_interface name="position"/>
             <state_interface name="position"/>
+            <param name="min_position">-2.93</param>
+            <param name="max_position">2.93</param>
         </joint>
 
+        <!-- Joint 2 -->
         <joint name="joint_2">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">${PI / 2}</param>
-            </command_interface>
+            <command_interface name="position"/>
             <state_interface name="position"/>
+            <param name="min_position">-2.35</param>
+            <param name="max_position">2.35</param>
         </joint>
 
+        <!-- Joint 3 -->
         <joint name="joint_3">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">${PI / 2}</param>
-            </command_interface>
+            <command_interface name="position"/>
             <state_interface name="position"/>
+            <param name="min_position">-2.53</param>
+            <param name="max_position">2.53</param>
         </joint>
 
+        <!-- Joint 4 -->
         <joint name="joint_4">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">0.0</param>
-            </command_interface>
+            <command_interface name="position"/>
             <state_interface name="position"/>
+            <param name="min_position">-2.53</param>
+            <param name="max_position">2.53</param>
         </joint>
 
+        <!-- Joint 5 -->
         <joint name="joint_5">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">0.0</param>
-            </command_interface>
+            <command_interface name="position"/>
             <state_interface name="position"/>
+            <param name="min_position">-2.93</param>
+            <param name="max_position">2.93</param>
         </joint>
 
+        <!-- Joint 6 -->
         <joint name="joint_6">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">0.0</param>
-            </command_interface>
+            <command_interface name="position"/>
             <state_interface name="position"/>
+            <param name="min_position">-3.14</param>
+            <param name="max_position">3.14</param>
         </joint>
 
+        <!-- Gripper Master Joint -->
         <joint name="left_jaw_joint_1">
-            <command_interface name="position">
-                <param name="min">-1.11</param>  
-                <param name="max">0.0</param>
-            </command_interface>
+            <command_interface name="position"/>
             <state_interface name="position"/>
+            <param name="min_position">-1.11</param>
+            <param name="max_position">0.0</param>
         </joint>
-
 
     </ros2_control>
 

@@ -3,9 +3,9 @@
   <name>mycobot_320pi_controller</name>
   <version>0.0.0</version>
   <description>The mycobot_320pi_controller package</description>
-  <maintainer email="nrih.robotics@gmail.com">Nrih</maintainer>
+  <maintainer email="nrih.robotics@gmail.com">Usama Zaheer</maintainer>
   <license>Apache 2.0</license>
-  <author email="nrih.robotics@gmail.com">Nrih</author>
+  <author email="nrih.robotics@gmail.com">Usama Zaheer</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_python</buildtool_depend>
@@ -23,6 +23,9 @@
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>xacro</exec_depend>
   <exec_depend>controller_manager</exec_depend>
+  <exec_depend>mycobot_320pi_description</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
