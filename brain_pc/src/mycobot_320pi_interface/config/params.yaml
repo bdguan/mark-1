@@ -5,7 +5,7 @@ robot_bridge:
     robot_port: "5555"
     
     # Control parameters
-    query_rate: 10.0  # Hz
+    query_rate: 50.0  # Hz
     timeout: 2.0      # seconds
     
     # Gripper threshold (0.0 to 1.0)

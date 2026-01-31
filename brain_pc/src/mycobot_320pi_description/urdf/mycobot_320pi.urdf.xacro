@@ -145,13 +145,13 @@
     <link name="link_6">
         <xacro:default_inertial mass="1.0"/>
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 -0.9599 0"/>
             <geometry>
                 <mesh filename="package://mycobot_320pi_description/meshes/link_6.dae"/>
             </geometry>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 -0.9599 0"/>
             <geometry>
                 <mesh filename="package://mycobot_320pi_description/meshes/link_6.dae"/>
             </geometry>
@@ -347,7 +347,7 @@
         <parent link="link_1"/>
         <child link = "link_2"/>
         <origin xyz="0 -0.0477 0.079" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
+        <axis xyz="0 -1 0"/>
         <limit lower="-2.35" upper="2.35" effort="5" velocity="10.0"/>   
     </joint>
 
@@ -357,7 +357,7 @@
         <parent link="link_2"/>
         <child link = "link_3"/>
         <origin xyz="0.0 0.0075 0.135" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
+        <axis xyz="0 -1 0"/>
         <limit lower="-2.53" upper="2.53" effort="5" velocity="10.0"/>   
     </joint>
 
@@ -367,7 +367,7 @@
         <parent link="link_3"/>
         <child link = "link_4"/>
         <origin xyz="0.0 0.002 0.1201" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
+        <axis xyz="0 -1 0"/>
         <limit lower="-2.53" upper="2.53" effort="5" velocity="10.0"/>   
     </joint>
 
@@ -382,13 +382,13 @@
     </joint>
 
 
-    <!-- Joint 6 -->  
+    <!-- Joint 6 -->
     <joint name ="joint_6" type="revolute">
         <parent link="link_5"/>
         <child link = "link_6"/>
-        <origin xyz="0.0 -0.045 0.05" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
-        <limit lower="-3.14" upper="3.14" effort="5" velocity="10.0"/>   
+        <origin xyz="0.0 -0.045 0.05" rpy="0 -2.3662 0"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-3.14" upper="3.14" effort="5" velocity="10.0"/>
     </joint>
 
 
@@ -416,13 +416,13 @@
     </joint>
 
 
-    <!-- Gripper Left Jaw Joint 1 -->  
+    <!-- Gripper Left Jaw Joint 1 -->
     <joint name ="left_jaw_joint_1" type="revolute">
         <parent link="gripper_base_link"/>
         <child link = "left_jaw_1_link"/>
         <origin xyz="-0.0115 -0.056 0.015" rpy="0 0 0"/>
         <axis xyz="-1 0 0"/>
-        <limit lower="-1.11" upper="0" effort="5" velocity="10.0"/>   
+        <limit lower="-1.11" upper="0" effort="5" velocity="10.0"/>
     </joint>
 
 
@@ -448,14 +448,14 @@
     </joint>
 
 
-    <!-- Gripper Right Jaw Joint 1 -->  
+    <!-- Gripper Right Jaw Joint 1 -->
     <joint name ="right_jaw_joint_1" type="revolute">
         <parent link="gripper_base_link"/>
         <child link = "right_jaw_1_link"/>
         <origin xyz="-0.0115 -0.056 -0.022" rpy="0 0 0"/>
         <axis xyz="-1 0 0"/>
         <limit lower="-1.11" upper="0" effort="5" velocity="10.0"/>
-        <mimic joint="left_jaw_joint_1" multiplier="-1.0" offset="0" />    
+        <mimic joint="left_jaw_joint_1" multiplier="-1.0" offset="0" />
     </joint>
 
 

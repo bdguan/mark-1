@@ -180,20 +180,6 @@ hardware_interface::return_type Mycobot320piInterface::write(const rclcpp::Time 
                                                            const rclcpp::Duration &period)
 {
     std::lock_guard<std::mutex> lock(state_mutex_);
-
-    // DEBUG: Log what commands are being received
-    static size_t counter = 0;
-    if (counter++ % 100 == 0)  // Changed to every 10th call for more frequent logging
-    {
-        RCLCPP_INFO(node_->get_logger(), "Position commands received:");
-        for (size_t i = 0; i < position_commands_.size(); i++)
-        {
-            RCLCPP_INFO(node_->get_logger(), "  Joint %zu: %.6f rad (%.2f deg)", 
-                i, 
-                position_commands_[i], 
-                position_commands_[i] * 57.2957795131);
-        }
-    }
     
     
     // Initialize prev_position_commands_ on first call or size mismatch
@@ -211,24 +197,13 @@ hardware_interface::return_type Mycobot320piInterface::write(const rclcpp::Time 
     const double SIGNIFICANT_CHANGE_THRESHOLD = 0.0001;  // 0.001 rad = ~0.057°
     const double ZERO_THRESHOLD = 0.0001;                // 0.001 rad = ~0.057°
     
+    
+        
     // DEBUG: Log changes
-    RCLCPP_INFO(node_->get_logger(), "Checking for significant changes:");
     for (size_t i = 0; i < position_commands_.size(); i++)
     {
         double diff = std::abs(position_commands_[i] - prev_position_commands_[i]);
         
-        // Check if this joint changed significantly
-        if (diff > SIGNIFICANT_CHANGE_THRESHOLD)
-        {
-            significant_change = true;
-            RCLCPP_INFO(node_->get_logger(), "  Joint %zu changed SIGNIFICANTLY: %.6f rad (%.3f°)", 
-                i, diff, diff * 57.2958);
-        }
-        else if (diff > 0)
-        {
-            RCLCPP_INFO(node_->get_logger(), "  Joint %zu changed INSIGNIFICANTLY: %.6f rad (%.3f°)", 
-                i, diff, diff * 57.2958);
-        }
         
         // Check if this command is non-zero (using larger threshold)
         if (std::abs(position_commands_[i]) > ZERO_THRESHOLD)
@@ -237,17 +212,6 @@ hardware_interface::return_type Mycobot320piInterface::write(const rclcpp::Time 
         }
     }
     
-    RCLCPP_INFO(node_->get_logger(), "significant_change=%s, all_zero=%s", 
-        significant_change ? "true" : "false", all_zero ? "true" : "false");
-    
-    // Publish if commands changed SIGNIFICANTLY OR if all values are 0.0 (with threshold)
-    if (!significant_change && !all_zero)
-    {
-        RCLCPP_INFO(node_->get_logger(), "SKIPPING publish - no significant changes and not all zero");
-        return hardware_interface::return_type::OK;
-    }
-    
-    RCLCPP_INFO(node_->get_logger(), "PUBLISHING commands to robot!");
     
     // Create message for arm joints (first 6 joints)
     auto arm_msg = std_msgs::msg::Float32MultiArray();
@@ -266,23 +230,12 @@ hardware_interface::return_type Mycobot320piInterface::write(const rclcpp::Time 
         (arm_joint_6_radians_to_degrees_ != 0.0) ? arm_joint_6_radians_to_degrees_ : 1.0
     };
     
-    RCLCPP_INFO(node_->get_logger(), "Sending arm command with %zu joints:", num_arm_joints);
     for (size_t i = 0; i < num_arm_joints; ++i)
     {
         // Check if this joint's command is significant enough to send
         double current_cmd = position_commands_[i];
         double prev_cmd = prev_position_commands_[i];
         
-        // If change is insignificant, use previous command value for this joint
-        if (std::abs(current_cmd - prev_cmd) <= SIGNIFICANT_CHANGE_THRESHOLD)
-        {
-            current_cmd = prev_cmd;
-            RCLCPP_INFO(node_->get_logger(), "  Joint %zu: Using previous value (%.6f rad)", i, prev_cmd);
-        }
-        else
-        {
-            RCLCPP_INFO(node_->get_logger(), "  Joint %zu: Using new value (%.6f rad)", i, current_cmd);
-        }
         
         // Apply calibration conversion (radians to degrees)
         double angle_degrees = current_cmd * calibration_factors[i];
@@ -300,16 +253,13 @@ hardware_interface::return_type Mycobot320piInterface::write(const rclcpp::Time 
         float formatted_angle = std::stof(stream.str());
 
         arm_msg.data.push_back(formatted_angle);
-        
-        RCLCPP_INFO(node_->get_logger(), "  Joint %zu -> %.1f deg", i, formatted_angle);
+     
     }
 
     // Publish the arm command
     if (num_arm_joints > 0)
     {
         robot_command_publisher_->publish(arm_msg);
-        RCLCPP_INFO(node_->get_logger(), "PUBLISHED arm command to /arm_hardware_command");
-        RCLCPP_INFO_ONCE(node_->get_logger(), "First arm command sent (initial positions)");
     }
 
     // Send gripper commands
@@ -333,12 +283,9 @@ hardware_interface::return_type Mycobot320piInterface::write(const rclcpp::Time 
 
         gripper_command_publisher_->publish(gripper_msg);
         
-        RCLCPP_INFO(node_->get_logger(), "PUBLISHED gripper command: %.3f", gripper_msg.data);
-        RCLCPP_INFO_ONCE(node_->get_logger(), "First gripper command sent");
     }
 
     prev_position_commands_ = position_commands_;
-    RCLCPP_INFO(node_->get_logger(), "Updated prev_position_commands_");
 
     return hardware_interface::return_type::OK;
 }
@@ -353,7 +300,6 @@ void Mycobot320piInterface::query_callback_arm(const std_msgs::msg::Float32Multi
             msg->data.size());
         return;
     }
-    RCLCPP_INFO(node_->get_logger(), "query_callback_arm CALLED! Received %zu values", msg->data.size());
 
     std::lock_guard<std::mutex> lock(state_mutex_);
     
@@ -373,12 +319,8 @@ void Mycobot320piInterface::query_callback_arm(const std_msgs::msg::Float32Multi
         double degrees = static_cast<double>(msg->data.at(i));
         position_states_[i] = degrees * calibration_factors[i];
         
-        RCLCPP_INFO(node_->get_logger(), 
-            "Arm joint %zu feedback: %.3f deg -> %.3f rad (calibration factor: %.6f)", 
-            i, degrees, position_states_[i], calibration_factors[i]);
     }
     
-    RCLCPP_DEBUG(node_->get_logger(), "Updated arm states from feedback");
 }
 
 
@@ -455,22 +397,6 @@ void Mycobot320piInterface::CalibrationArm(const std_msgs::msg::Float32MultiArra
     gripper_radians_to_degrees_    = new_arm_calibs[12];
     gripper_degrees_to_radians_    = new_arm_calibs[13];
     
-    
-    RCLCPP_INFO(logger_, "\033[1;32mCalibration updated for ARM:\033[0m");
-    RCLCPP_INFO(logger_,"\033[1;32m  Arm 1  -> radian2degree_1: %f, degree2radian_1: %f\033[0m",
-                arm_joint_1_radians_to_degrees_, arm_joint_1_degrees_to_radians_);
-    RCLCPP_INFO(logger_,"\033[1;32m  Arm 2  -> radian2degree_2: %f, degree2radian_2: %f\033[0m",
-                arm_joint_2_radians_to_degrees_, arm_joint_2_degrees_to_radians_);
-    RCLCPP_INFO(logger_,"\033[1;32m  Arm 3  -> radian2degree_3: %f, degree2radian_3: %f\033[0m",
-                arm_joint_3_radians_to_degrees_, arm_joint_3_degrees_to_radians_);
-    RCLCPP_INFO(logger_,"\033[1;32m  Arm 4  -> radian2degree_4: %f, degree2radian_4: %f\033[0m",
-                arm_joint_4_radians_to_degrees_, arm_joint_4_degrees_to_radians_);
-    RCLCPP_INFO(logger_,"\033[1;32m  Arm 5  -> radian2degree_5: %f, degree2radian_5: %f\033[0m",
-                arm_joint_5_radians_to_degrees_, arm_joint_5_degrees_to_radians_);
-    RCLCPP_INFO(logger_,"\033[1;32m  Arm 6  -> radian2degree_6: %f, degree2radian_6: %f\033[0m",
-                arm_joint_6_radians_to_degrees_, arm_joint_6_degrees_to_radians_);
-    RCLCPP_INFO(logger_,"\033[1;32m  Gripper  -> radian2degree: %f, degree2radian: %f\033[0m",
-                gripper_radians_to_degrees_, gripper_degrees_to_radians_);
 
     prev_arm_calibrations_ = new_arm_calibs;
 }
