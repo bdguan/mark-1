@@ -1,15 +1,15 @@
-arm_joint_1_radians_to_degrees: 50.6866
+arm_joint_1_radians_to_degrees: 58.166
 arm_joint_2_radians_to_degrees: 55.9108
-arm_joint_3_radians_to_degrees: 56.1000
-arm_joint_4_radians_to_degrees: 54.4507
-arm_joint_5_radians_to_degrees: 54.3661
+arm_joint_3_radians_to_degrees: 54.9000
+arm_joint_4_radians_to_degrees: 55.9507
+arm_joint_5_radians_to_degrees: 56.9661
 arm_joint_6_radians_to_degrees: 57.2958
 
-arm_joint_1_degrees_to_radians: 0.0197290687
-arm_joint_2_degrees_to_radians: 0.0178856392
+arm_joint_1_degrees_to_radians: 0.0177290687
+arm_joint_2_degrees_to_radians: 0.0175996392
 arm_joint_3_degrees_to_radians: 0.0178253119
-arm_joint_4_degrees_to_radians: 0.0183652454
-arm_joint_5_degrees_to_radians: 0.0183938005
+arm_joint_4_degrees_to_radians: 0.0176652454
+arm_joint_5_degrees_to_radians: 0.0173938005
 arm_joint_6_degrees_to_radians: 0.0174532925
 
 gripper_radians_to_degrees: 1.0
