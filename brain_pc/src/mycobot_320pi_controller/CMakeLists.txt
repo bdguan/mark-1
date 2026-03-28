@@ -12,7 +12,6 @@ find_package(hardware_interface REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
 find_package(std_msgs REQUIRED)  # Add this - it was missing
-find_package(mycobot_320pi_msgs REQUIRED)  # Add this BEFORE using it in dependencies
 
 find_package(PkgConfig)
 pkg_check_modules(SERIAL libserial)
@@ -45,7 +44,6 @@ ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   rclcpp_lifecycle
   std_msgs
-  mycobot_320pi_msgs  # Now this will work
 )
 
 pluginlib_export_plugin_description_file(hardware_interface mycobot_320pi_controller.xml)
@@ -100,7 +98,6 @@ ament_export_dependencies(
   rclcpp
   rclcpp_lifecycle
   std_msgs
-  mycobot_320pi_msgs
 )
 
 ament_package()
